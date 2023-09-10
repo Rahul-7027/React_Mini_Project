@@ -2,6 +2,13 @@ import React from 'react'
 
 const Greet = () => {
 
+
+    // function play() {
+    //     var audio = new Audio('https://www.soundjay.com/buttons/sounds/beep-02.mp3');
+    //     audio.play();
+    // }
+
+
     let colorData = {
         color: "",
         textAlign: ""
@@ -11,15 +18,24 @@ const Greet = () => {
     let greeting = ""
     if (min >= 1 && min < 12) {
         greeting = "Good Morning";
-        colorData.color="green"
+        colorData.color = "green";
+        // setTimeout(() => {
+        //     play()
+        // }, 1000)
     }
     else if (min >= 12 && min < 19) {
         greeting = "Good Afternoon";
-        colorData.color="Orange"
+        colorData.color = "Orange";
+        // setTimeout(() => {
+        //     play()
+        // }, 1000)
     }
     else {
         greeting = "Good Night's";
-        colorData.color="#ea7c7c"
+        colorData.color = "#ea7c7c";
+        // setTimeout(() => {
+        //     play()
+        // }, 1000)
     }
     return (
         <div className='container'>
